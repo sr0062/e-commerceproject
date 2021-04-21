@@ -1,0 +1,11 @@
+<html>
+<head>
+<?php
+include("functions.php");
+?>
+</head>
+<body>
+<?php
+printNumbers(10);
+?>
+</body></html>

@@ -1,0 +1,12 @@
+//In mysql console (connect using putty)
+use sr0062;//use your own db
+show tables;
+
+create table readimages ( id INT NOT NULL PRIMARY KEY  AUTO_INCREMENT, name CHAR(50) NOT NULL, des VARCHAR(75));
+//now add a new column
+alter table readimages add path varchar(255);
+
+ INSERT INTO readimages(name,path,des)
+    -> VALUES('butterfly1.jpg','images/butterfly1.jpg','a butterfly image');
+//add more images
+//make sure the folder is named images and in the same location as the php codes
